@@ -1,0 +1,357 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*  *@
+<div class="hero-wrap js-fullheight" style="background-image: url('images/Principal-1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+            <div class="col-md-6 ftco-animate">
+                <h2 class="subheading" style="color:#8c552e;text-shadow: 2px 2px 2px #000">Bienvenido a SyGest Municipal</h2>
+                <h1 style="text-shadow: 2px 2px 2px #333">Sistema de Gestión de Servicios Municipales</h1>
+
+                <p class="mb-8" style="color:white;text-shadow: 2px 2px 5px #000">
+                    Gestión de Servicios de Patentes, Oficina de Gestión Ambiental, Oficina de La Mujer...
+                </p>
+
+                <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Leer Más<span class="ion-ios-arrow-forward"></span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+@*  *@
+@* Sección 1 *@
+<section class="ftco-section ftco-no-pt bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 py-5 order-md-last">
+                <div class="heading-section ftco-animate">
+                    <span class="subheading">Servicios</span>
+                    <h2 class="mb-4">Servicios Municipales</h2>
+                    <p>SYGEST Municipal es una plataforma en desarrollo, que tiene por objetivo el manejo de los servicios municipales de forma virtual</p>
+                    <p><a href="services.html" class="btn btn-primary py-3 px-4">Get a Quote</a></p>
+                </div>
+            </div>
+            <div class="col-lg-9 services-wrap px-4 pt-5">
+                <div class="row pt-md-3">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-fence"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Oficina de Patentes</h3>
+                                <p>
+                                    A este departamento le corresponde la regularización de la actividad económica del Cantón de Hojancha según las
+                                    diferentes Licencias de Funcionamiento y de Impuesto de Patentes conforme la normativa vigente..
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="PATENTES" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-lawn-mower"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Oficina de Gestión Ambiental</h3>
+                                <p>
+                                    Supervisar el eficiente funcionamiento de los servicios públicos que están relacionados con el ambiente, como lo son,
+                                    la recolección de basura, limpieza de vías, calidad del agua y una adecuada administración del tratamiento de los desechos sólidos...
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="OFGA" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-natural-resources"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Oficina de La Mujer</h3>
+                                <p>
+                                    Promocionar los derechos de las mujeres, Coordinación interinstitucional y comunitaria para la atención y la promoción
+                                    de derechos Ofrecer una atención especializada individualmente y grupal a las mujeres afectadas por violencia intrafamiliar...
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="OFIM" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*Fin Sección 1 *@
+
+@*Inicio Sección 2 *@
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-bg-dark-main">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-6 d-flex">
+                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url(images/gallery-1.jpg);">
+                    <a href="https://www.youtube.com/watch?v=Hv5ooxbPEEU" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                        <span class="icon-play"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 pl-md-5">
+                <div class="row justify-content-start py-5">
+                    <div class="col-md-12 heading-section ftco-animate">
+                        <span class="subheading">Bienvenido al Sistema de Gestión de Servicios Municipales</span>
+                        <h2 class="mb-4" style="color:white">Bienvenido a SyGest Municipal</h2>
+                        <p>Servicios al Alcance de tus Manos</p>
+                        <div class="services-wrap">
+                            <a href="#" class="services-list">
+                                Gutter cleaning
+                                <div class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></div>
+                            </a>
+                            <a href="#" class="services-list">
+                                Organinc fertilization and weed control
+                                <div class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></div>
+                            </a>
+                            <a href="#" class="services-list">
+                                Compost top dressing &amp; compost tea application
+                                <div class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></div>
+                            </a>
+                            <a href="#" class="services-list">
+                                New lawn installation
+                                <div class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></div>
+                            </a>
+                            <a href="#" class="services-list">
+                                Mulch and other services available
+                                <div class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*Fin Sección 2 *@
+@*Ini Sección 3*@
+<section class="ftco-section testimony-section bg-white">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Profesionales</span>
+                <h2 class="mb-4">Personal a Servicio del Cantón</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel ftco-owl">
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="mb-4">Profesional capacitada para la atención y ayuda contra los casos de violencia de género y la promoción de capacitaciones que ayuden a combatirlo.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(images/Cindy.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Cindy Guevara Cárdenas</p>
+                                        <span class="position">Coordinadora de la Oficina de la Mujer.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="mb-4">Profesional capacitado para permitir que la municipalidad pueda ofrecer sus servicios de forma eficiente, a través de herramientas tecnológicas a favor del cantón.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(images/Bryan.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Bryan Bermúdez González</p>
+                                        <span class="position">Encargado del Área de Tecnología de la Información.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="mb-4">Profesional encargada de la administración y atención en el área de Gestión Ambiental, esto con el fin de matener un cantón más limpio y educado en cuanto al reciclaje y el cuidado de nuestro medio ambiente</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(images/Andrea.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Andrea Leiva Saborío</p>
+                                        <span class="position">Coordinadora de la Oficina de Gestión Ambiental.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimony-wrap py-4">
+                            <div class="text">
+                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts there live the blind text there live the blind text there live the blind text there live the blind text.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img" style="background-image: url(images/LiusA.jpg)"></div>
+                                    <div class="pl-3">
+                                        <p class="name">Luis Agüero Valverde</p>
+                                        <span class="position">Encargado del Área de Patentes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*Fin Sección 3*@
+
+@*Ini Sección 4 *@
+<section class="ftco-section ftco-bg-dark-main">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">Our Blog</span>
+                <h2 style="color:white">Recent Blog</h2>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                    </a>
+                    <div class="text p-4 float-right d-block">
+                        <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                                <span class="day">24</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                                <span class="yr">2020</span>
+                                <span class="mos">January</span>
+                            </div>
+                        </div>
+                        <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+                    </a>
+                    <div class="text p-4 float-right d-block">
+                        <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                                <span class="day">24</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                                <span class="yr">2020</span>
+                                <span class="mos">January</span>
+                            </div>
+                        </div>
+                        <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+                    </a>
+                    <div class="text p-4 float-right d-block">
+                        <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                                <span class="day">24</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                                <span class="yr">2020</span>
+                                <span class="mos">January</span>
+                            </div>
+                        </div>
+                        <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*Fin Sección 4*@
+
+@* Sección 5 *@
+<section class="ftco-section ftco-no-pt bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 py-5 order-md-last">
+                <div class="heading-section ftco-animate">
+                    <span class="subheading">Servicios</span>
+                    <h2 class="mb-4">Transacciones Online Municipales</h2>
+                    <p>SYGEST Municipal es una plataforma en desarrollo, que tiene por objetivo el manejo de los servicios municipales de forma virtual</p>
+                    <p><a href="services.html" class="btn btn-primary py-3 px-4">Get a Quote</a></p>
+                </div>
+            </div>
+            <div class="col-lg-9 services-wrap px-4 pt-5">
+                <div class="row pt-md-3">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-fence"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Solicitud de Patentes</h3>
+                                <p>
+                                    A este departamento le corresponde la regularización de la actividad económica del Cantón de Hojancha según las
+                                    diferentes Licencias de Funcionamiento y de Impuesto de Patentes conforme la normativa vigente..
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="PATENTES" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-lawn-mower"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Denuncias Ambientales</h3>
+                                <p>
+                                    Supervisar el eficiente funcionamiento de los servicios públicos que están relacionados con el ambiente, como lo son,
+                                    la recolección de basura, limpieza de vías, calidad del agua y una adecuada administración del tratamiento de los desechos sólidos...
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="OFGA" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="services text-center">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-natural-resources"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Servicios de la Oficina de la Mujer</h3>
+                                <p>
+                                    Promocionar los derechos de las mujeres, Coordinación interinstitucional y comunitaria para la atención y la promoción
+                                    de derechos Ofrecer una atención especializada individualmente y grupal a las mujeres afectadas por violencia intrafamiliar...
+                                </p>
+                            </div>
+                            <a class="btn-custom d-flex align-items-center justify-content-center" asp-area="OFIM" asp-controller="Home" asp-action="Index"><span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*Fin Sección 5 *@

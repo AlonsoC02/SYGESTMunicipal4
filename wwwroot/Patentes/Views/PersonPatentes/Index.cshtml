@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SYGESTMunicipal.Areas.PATENTES.Models.PersonPatentes>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutPATENTES.cshtml";
+}
+<br />
+<br />
+<div class="border backgroundWhite">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-info">Lista de personas Patentes</h2>
+        </div>
+        <div class="col-lg-6 text-right">
+            @*//CREAR UNA VISTA PARCIAL DEL BOTON CREAR*@
+            <partial name="_CreateButtonPartial" />
+        </div>
+    </div>
+    @*//Vista del filtro*@
+    <div class="row">
+        <div class="col-12 text-right">
+            <partial name="_Filter" />
+        </div>
+    </div>
+
+    <br />
+    <div>
+        @if (Model.Count() > 0)
+        {
+            <table class="table tale-striped border">
+                <tr class="table.secondary">
+                    <th>
+                        @*//header*@
+                        @Html.DisplayNameFor(m => m.PersonId)
+                    </th>
+                    <th>
+                        @*//header*@
+                        @Html.DisplayNameFor(m => m.Name)
+                    </th>
+                    <th>
+                        @*//header*@
+                        @Html.DisplayNameFor(m => m.LastName1)
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td>
+                    @*//detail*@
+                    @Html.DisplayFor(m => item.PersonId)
+                </td>
+                <td>
+                    @*//detail*@
+                    @Html.DisplayFor(m => item.Name)
+                </td>
+                <td>
+                    @*//detail*@
+                    @Html.DisplayFor(m => item.LastName1)
+                </td>
+                <td>
+                    <partial name="_TableButtonPartial" model="item.PersonId" />
+                </td>
+            </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <h3 style="color:maroon">No Existen personas patentadas...</h3>
+        }
+    </div>
+</div>
